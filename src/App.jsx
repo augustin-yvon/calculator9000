@@ -1,12 +1,14 @@
-import './App.css'
+import './assets/css/App.css'
 import Title from './components/Title'
+import Calculator from './components/Calculator'
 
 function App() {
 
   return (
-    <>
-      <Title text="Calculator9000" />
-    </>
+    <div className='main-container'>
+      <Title text="Calculator9000" /> 
+      <Calculator />
+    </div>
   )
 }
 

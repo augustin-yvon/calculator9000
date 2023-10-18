@@ -1,0 +1,157 @@
+@import url(./reset.css);
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-title {
+  margin: 20px 0;
+  font-size: 2rem;
+  font-weight: 525;
+  color: rgb(24, 93, 204);
+}
+
+
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 3px solid rgb(32, 32, 32);
+  border-radius: 10px;
+  color: white;
+}
+
+.screen {
+  background-color: rgb(15, 156, 20);
+  border-radius: 7px;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+}
+.screen-text {
+  padding: 8px 5px;
+}
+.delete {
+  margin-left: auto;
+  margin-right: 5px;
+  color: rgb(104, 8, 8);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.key-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.numbers .number {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(31, 31, 31);
+  border-radius: 50px;
+  font-size: 1.25rem;
+}
+
+.zeroNdot {
+  display: flex;
+  gap: 5px;
+}
+
+.zero {
+  flex: 2;
+  color: white;
+  height: 35px;
+  padding: 0 5px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.dot {
+  flex: 1;
+  width: 35px;
+  height: 35px;
+  color: white;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.operator {
+  width: 35px;
+  height: 35px;
+  color: white;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.equal {
+  margin-top: 5px;
+  height: 35px;
+  color: white;
+  background-color: rgb(213, 118, 9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.number, .zero, .dot, .operator, .equal {
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.nine {
+  margin-top: 5px;
+  color: red;
+}
+
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
